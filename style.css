@@ -1,0 +1,210 @@
+:root {
+    --primary-green: #2e7d32;
+    --dark-green: #1b5e20;
+    --light-green: #e8f5e9;
+    --text-black: #333333;
+    --bg-white: #ffffff;
+    --gray-bg: #f5f5f5;
+    --link-hover: #4caf50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-white);
+    color: var(--text-black);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--light-green);
+    border-bottom: 2px solid var(--primary-green);
+}
+
+.logo-container {
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.main-title {
+    color: var(--primary-green);
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    flex: 1;
+}
+
+.intro-text p, .calculator-text p, .products-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--text-black);
+}
+
+.intro-text strong {
+    color: var(--primary-green);
+}
+
+/* Icon Links Section */
+.icon-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+}
+
+.round-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-green);
+    color: var(--bg-white);
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(46, 125, 50, 0.3);
+}
+
+.round-icon:hover {
+    transform: translateY(-5px);
+    background-color: var(--dark-green);
+    color: var(--bg-white);
+}
+
+.icon-label {
+    font-weight: 600;
+    color: var(--primary-green);
+    font-size: 1rem;
+}
+
+/* Subpages Specific */
+.back-nav {
+    margin-bottom: 2rem;
+}
+
+.back-link {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--dark-green);
+}
+
+.products-text h2 {
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+}
+
+.product-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-list li {
+    background: var(--gray-bg);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-left: 4px solid var(--primary-green);
+    border-radius: 4px;
+}
+
+.product-list a {
+    color: var(--primary-green);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.product-list a:hover {
+    text-decoration: underline;
+    color: var(--dark-green);
+}
+
+.calculator-text a {
+    color: var(--primary-green);
+    font-weight: bold;
+}
+
+.calculator-placeholder {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.placeholder-box {
+    background-color: var(--light-green);
+    padding: 3rem;
+    border: 2px dashed var(--primary-green);
+    border-radius: 8px;
+    color: var(--dark-green);
+}
+
+.placeholder-box i {
+    margin-bottom: 1rem;
+    color: var(--primary-green);
+}
+
+.site-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--gray-bg);
+    color: var(--text-black);
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 1.8rem;
+    }
+
+    .icon-links {
+        gap: 1.5rem;
+    }
+
+    .round-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
