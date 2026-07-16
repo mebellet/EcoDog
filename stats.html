@@ -1,106 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistiken - Ökologischer Fußabdruck</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .stats-image {
-            max-width: 100%;
-            height: auto;
-            margin: 1.5rem 0;
-            display: block;
-        }
-    </style>
-</head>
-<body>
-    <header class="site-header">
-        <div class="logo-container">
-            <img src="logo.svg" alt="Brauner Doodle Kopf Logo" class="logo">
-        </div>
-        <h1 class="main-title">Statistiken: Ökologischer Fußabdruck von Hundefutter</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Statistiken - Ökologischer Fußabdruck</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <style>
+            .stats-image {
+                max-width: 100%;
+                height: auto;
+                margin: 1.5rem 0;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="logo-container">
+                <img src="logo.svg" alt="Brauner Doodle Kopf Logo" class="logo" />
+            </div>
+            <h1 class="main-title">Statistiken: Ökologischer Fußabdruck von Hundefutter</h1>
+        </header>
 
-    <main class="content-container">
-        <nav class="back-nav">
-            <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Zurück zur Startseite</a>
-        </nav>
+        <main class="content-container">
+            <nav class="back-nav">
+                <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Zurück zur Startseite</a>
+            </nav>
 
-        <section class="calculator-text">
-            <p>
-                Auf dieser Seite werden verschiedene Hundefutter anhand der <strong>CO2-Bilanz ihrer Inhaltsstoffe</strong> verglichen.<br>
-            </p>
-            <details>
-                <summary>Was wird berechnet?</summary>
-                <div class="dropdown-content">
-                    <p>Die Berechnungen dafür basieren auf life cycle analyses (<strong>LCA</strong>) von Lebensmitteln, die in der Datenbank von 
-                <a href="https://data.ademe.fr/datasets?topics=TQJGtxm2_,2wn-uc69sxs8gr0k7gh75uhd" target="_blank">AGRIBALYSE</a> öffentlich zugänglich sind.
-                LCA messen den gesamten ökologischen Fußabdruck von Lebensmitteln, vom Feld bis zum Konsumenten, mit Berücksichtigung von Emissionen,
-                Landnutzung, Wasserverbrauch und Abfall. Die hier gezeigten Ergebnisse beschränken sich bislang auf die Emissionen, gemessen als CO2-Äuivalente,
-                was CO2 und andere Treibhausgase berücksichtigt.
-                    </p>
-                </div>
-            </details>   
-            
-            <img src="outputs/LCA_Hundefutter.png" alt="LCA Hundefutter" class="stats-image">
-            <p>
-                Die Grafik gibt einen Überblick über verschiedene Trockenfutter für erwachsene Hunde. Blaue Punkte zeigen Futter, 
-            die tierisches Protein verwenden, grüne nutzen ausschließlich pflanzliche Proteine (vegan).<br> 
-                Nachstehend ein Zoom in den Bereich mit Emissionen unter 5 kg CO2/kg Futter. Es wird deutlich, dass <strong>vegane</strong> Produkte 
-                eindeutig niedrigere Emissionen mit sich bringen.
-            </p>
-            <img src="outputs/LCA_Hundefutter_subgroup.png" alt="LCA Hundefutter Subgruppen" class="stats-image">
-            
-                <br>
+            <section class="calculator-text">
+                <p>
+                    Auf dieser Seite werden verschiedene Hundefutter anhand der
+                    <strong>CO2-Bilanz ihrer Inhaltsstoffe</strong> verglichen.<br />
+                </p>
+                <details>
+                    <summary>Was wird berechnet?</summary>
+                    <div class="dropdown-content">
+                        <p>
+                            Die Berechnungen dafür basieren auf life cycle analyses (<strong>LCA</strong>) von
+                            Lebensmitteln, die in der Datenbank von
+                            <a
+                                href="https://data.ademe.fr/datasets?topics=TQJGtxm2_,2wn-uc69sxs8gr0k7gh75uhd"
+                                target="_blank"
+                                >AGRIBALYSE</a
+                            >
+                            öffentlich zugänglich sind. LCA messen den gesamten ökologischen Fußabdruck von
+                            Lebensmitteln, vom Feld bis zum Konsumenten, mit Berücksichtigung von Emissionen,
+                            Landnutzung, Wasserverbrauch und Abfall. Die hier gezeigten Ergebnisse beschränken sich
+                            bislang auf die Emissionen, gemessen als CO2-Äuivalente, was CO2 und andere Treibhausgase
+                            berücksichtigt.
+                        </p>
+                    </div>
+                </details>
+
+                <img src="outputs/LCA_Hundefutter.png" alt="LCA Hundefutter" class="stats-image" />
+                <p>
+                    Die Grafik gibt einen Überblick über verschiedene Trockenfutter für erwachsene Hunde. Blaue Punkte
+                    zeigen Futter, die tierisches Protein verwenden, grüne nutzen ausschließlich pflanzliche Proteine
+                    (vegan).<br />
+                    Nachstehend ein Zoom in den Bereich mit Emissionen unter 5 kg CO2/kg Futter. Es wird deutlich, dass
+                    <strong>vegane</strong> Produkte eindeutig niedrigere Emissionen mit sich bringen.
+                </p>
+                <img src="outputs/LCA_Hundefutter_subgroup.png" alt="LCA Hundefutter Subgruppen" class="stats-image" />
+
+                <br />
                 <h3>Hinweise zur Berechnungsmethode</h3>
-                <br>
-            <details>
-                <summary>LCA Datenquelle</summary>
-                <div class="dropdown-content">
-                    <p>Zur Berechnung der Emissionen, die ein Futtermittel mitbringt, wurden die CO2-Äq. Werte der von den Herstellern angegebenen Inhaltsstoffe für die Etappen Landwirtschaft und Transformation 
-                        in der <a href="https://data.ademe.fr/datasets?topics=TQJGtxm2_,2wn-uc69sxs8gr0k7gh75uhd" target="_blank">AGRIBALYSE</a> Datenbank ermittelt und summiert.
-                    </p>
-                    <p>
-                        Wieso ausschließlich diese beiden Etappen der Lebensmittelverarbeitung? Da es nicht öffentlich ersichtlich ist, woher die Hersteller von Hundefutter ihre primären Produkte beziehen,
-                    sind Rückschlüsse über den Transport und Verpackung der Zutaten nicht möglich. Ebenso ist die genaue Weiterverarbeitung der Zutaten durch die Hersteller nicht bekannt, wodurch die Emissionen, die durch
-                        die Produktion des finalen Trockenfutters entstehen, nicht berücksichtigt sind. Dies betrifft jedoch alle Trockenfutter, die hier verglichen werden. 
-                        Verglichen werden also schlussendlichen die Emissionen, die lediglich durch die Zutaten selbst entstehen.<br>
-                        Und da ist die Hauptproteinquelle meist die ausschlaggebende Komponente. Ob das Futter 30% Rindfleisch oder 30% Soja enthält, macht einen riesigen Unterschied für die CO2-Bilanz.
-                    </p>
-                </div>
-            </details>
-            
-            <details>
-                <summary>Ungenaue Angaben bei tierischen Inhaltsstoffen</summary>
-                <div class="dropdown-content">
-                    <p> Warum es eine Rolle spielt, ob Muskelfleisch oder Innerein verwendet werden.
-                    </p>
-                </div>
-            </details>
-            
-            <details>
-                <summary>Fehlende Daten: Proxy-Mapping</summary>
-                <div class="dropdown-content">
-                    <p> Ein paar Annahmen.
-                    </p>
-                </div>
-            </details>
-            
-            <details>
-                <summary>Das Prinzip der Ökonomischen Allokation</summary>
-                <div class="dropdown-content">
-                    <p> Warum Innereien eine bessere CO2-Bilanz haben als Muskel und Kartoffelproteine eine bessere als Stärke.
-                    </p>
-                </div>
-            </details>
-            
-        </section>
-    </main>
+                <br />
+                <details>
+                    <summary>LCA Datenquelle</summary>
+                    <div class="dropdown-content">
+                        <p>
+                            Zur Berechnung der Emissionen, die ein Futtermittel mitbringt, wurden die CO2-Äq. Werte der
+                            von den Herstellern angegebenen Inhaltsstoffe für die Etappen Landwirtschaft und
+                            Transformation in der
+                            <a
+                                href="https://data.ademe.fr/datasets?topics=TQJGtxm2_,2wn-uc69sxs8gr0k7gh75uhd"
+                                target="_blank"
+                                >AGRIBALYSE</a
+                            >
+                            Datenbank ermittelt und summiert.
+                        </p>
+                        <p>
+                            Wieso ausschließlich diese beiden Etappen der Lebensmittelverarbeitung? Da es nicht
+                            öffentlich ersichtlich ist, woher die Hersteller von Hundefutter ihre primären Produkte
+                            beziehen, sind Rückschlüsse über den Transport und Verpackung der Zutaten nicht möglich.
+                            Ebenso ist die genaue Weiterverarbeitung der Zutaten durch die Hersteller nicht bekannt,
+                            wodurch die Emissionen, die durch die Produktion des finalen Trockenfutters entstehen, nicht
+                            berücksichtigt sind. Dies betrifft jedoch alle Trockenfutter, die hier verglichen werden.
+                            Verglichen werden also schlussendlichen die Emissionen, die lediglich durch die Zutaten
+                            selbst entstehen.<br />
+                            Und da ist die Hauptproteinquelle meist die ausschlaggebende Komponente. Ob das Futter 30%
+                            Rindfleisch oder 30% Soja enthält, macht einen riesigen Unterschied für die CO2-Bilanz.
+                        </p>
+                    </div>
+                </details>
 
-    <footer class="site-footer">
-        <p>&copy; 2023 Umweltbewusste Hundehalter</p>
-    </footer>
-</body>
+                <details>
+                    <summary>(Un)Genauigkeiten bei tierischen Inhaltsstoffen</summary>
+                    <div class="dropdown-content">
+                        <p>
+                            Die Hersteller werben teilweise ausdrücklich mit "wertvollem" Muskelfleisch. Steht diese
+                            Info nicht dabei, kann es sich bei Rind und Co. genauso um Innereien und Abfälle aus der
+                            Schlachtindustrie handeln. Für die LCA Werte ist das wichtig, da den verschiedenen
+                            Bestandteile eines Tieres nicht dieselbe CO2-Bilanz zugeteilt werden. Dieses Prinzip nennt
+                            man Ökonomische Allokation. Darüber unten mehr.
+                        </p>
+                        <p>
+                            Wenn eindeutig Fleisch angegeben war, wurde davon ausgegangen, dass es sich
+                            <strong>nicht</strong> um Innerein handelte. Fehlte die Angabe jedoch, oder war gar von
+                            Rinder<strong>protein</strong> die Rede, wurden sehr wahrscheinlich die auch
+                            kostengünstigeren Innereien aus Schlachtabfällen verwendet. ''
+                        </p>
+                        <p>
+                            Zu Beachten ist bei den Zutaten, die als <i>Protein</i> oder <i>getrocknet</i> angegeben
+                            werden außerdem folgendes:
+                            <br>
+                        </p>   
+                        <ul>
+                            <li>1. Der landwirtschaftliche Input (Massenbilanz)<br>
+                            Frischfleisch besteht zu ca. 70–75 % aus Wasser.<br>
+                            * Für 1 kg getrocknetes Fleisch wird dem Fleisch primär das Wasser entzogen. Es braucht also etwa 3,5 kg frisches Fleisch als Input.<br>
+                                * Für 1 kg Fleischprotein wird dem Fleisch nicht nur das Wasser, sondern auch das gesamte tierische Fett und die Mineralien (Knochenasche) entzogen. Um am Ende 1 kg reines Protein zu erhalten, ist der Input an Ausgangsmaterial (und damit die landwirtschaftlichen Emissionen) nochmals spürbar höher.</li>
+                            <li>2. Der energetische Input (Processing)<br>
+                            Die Verarbeitung zu Fleischmehl ist standardisiert (Hitze und Druck). Die Herstellung von Fleischproteinen oder gar Proteinhydrolysat erfordert weitere energieintensive Trennverfahren (Zentrifugen, Lösungsmittel, enzymatische Spaltung). Dieser zusätzliche Energiebedarf der Maschinen und Anlagen erhöht die Emissionen des Herstellers, was auf den LCA-Wert des Pulvers aufgeschlagen wird.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Fehlende Daten: Proxy-Mapping</summary>
+                    <div class="dropdown-content">
+                        <p>Ein paar Annahmen.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Das Prinzip der Ökonomischen Allokation</summary>
+                    <div class="dropdown-content">
+                        <p>
+                            Warum Innereien eine bessere CO2-Bilanz haben als Muskel und Kartoffelproteine eine bessere
+                            als Stärke.
+                        </p>
+                    </div>
+                </details>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2023 Umweltbewusste Hundehalter</p>
+        </footer>
+    </body>
 </html>
