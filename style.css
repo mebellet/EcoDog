@@ -225,7 +225,7 @@ details[open] summary {
 
 /* Der aufklappende Inhaltsbereich unter der Box */
 .dropdown-content {
-  background-color: var(--primary-green); /* Dezenter grauer Hintergrund für den Lesetext */
+  background-color: var(--light-green); /* Dezenter grauer Hintergrund für den Lesetext */
   padding: 1.5rem;
   border: 1px solid #ddd;
   border-top: none; /* Schließt bündig an die farbige Summary-Box an */
