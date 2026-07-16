@@ -200,13 +200,13 @@ details {
 
 /* Die Überschrift als vollflächige, farbige Box */
 summary {
-  background-color: var(--primary-green); /* Beispiel-Farbe: Ein ruhiges Blau. Hier deine Wunschfarbe eintragen! */
+  background-color: var(--gray-bg); /* Beispiel-Farbe: Ein ruhiges Blau. Hier deine Wunschfarbe eintragen! */
   color: black; /* Helle Schrift für dunklen Hintergrund */
   padding: 1rem;
   font-weight: bold;
   font-size: 1.8rem;
   cursor: pointer;
-  border-radius: None;
+  border-radius: 5px;
  border-left: 4px solid var(--dark-green);
   box-sizing: border-box; /* Verhindert, dass das Padding die Box breiter als 100% macht */
   outline: none;
@@ -214,7 +214,7 @@ summary {
 
 /* Hover-Effekt: Etwas dunkler, wenn man mit der Maus darüber fährt */
 summary:hover {
-  background-color: #3a6591;
+  background-color: var(--primary-green);
 }
 
 /* Cleverer Trick: Wenn das Dropdown OFFEN ist, werden die unteren Ecken der 
@@ -225,7 +225,7 @@ details[open] summary {
 
 /* Der aufklappende Inhaltsbereich unter der Box */
 .dropdown-content {
-  background-color: #f9f9f9; /* Dezenter grauer Hintergrund für den Lesetext */
+  background-color: var(--primary-green); /* Dezenter grauer Hintergrund für den Lesetext */
   padding: 1.5rem;
   border: 1px solid #ddd;
   border-top: none; /* Schließt bündig an die farbige Summary-Box an */
