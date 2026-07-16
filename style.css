@@ -204,7 +204,7 @@ summary {
   color: black; /* Helle Schrift für dunklen Hintergrund */
   padding: 1rem;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   cursor: pointer;
   border-radius: 5px;
  border-left: 4px solid var(--dark-green);
@@ -214,7 +214,7 @@ summary {
 
 /* Hover-Effekt: Etwas dunkler, wenn man mit der Maus darüber fährt */
 summary:hover {
-  background-color: var(--primary-green);
+  background-color: var(--light-green);
 }
 
 /* Cleverer Trick: Wenn das Dropdown OFFEN ist, werden die unteren Ecken der 
