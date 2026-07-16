@@ -192,6 +192,40 @@ body {
     border-top: 1px solid #ddd;
 }
 
+/* Styling für das gesamte Dropdown-Element */
+details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: var(--primary-green);
+}
+
+/* Styling für die anklickbare Überschrift */
+summary {
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background: var(--gray-bg);
+margin-bottom: 1rem;
+    padding: 1rem;
+    border-left: 4px solid var(--primary-green);
+    border-radius: 4px;
+}
+
+/* Ändert die Hintergrundfarbe, wenn man mit der Maus darüber fährt */
+summary:hover {
+  background-color: #eaeaea;
+  border-radius: 3px;
+}
+
+/* Styling für den Inhalt, der aufklappt */
+.dropdown-content {
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  border-top: 1px solid #ddd;
+  margin-top: 0.5rem;
+}
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
     .main-title {
